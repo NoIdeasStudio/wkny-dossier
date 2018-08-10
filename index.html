@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/hamburger.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 	<!--  FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -32,6 +32,14 @@
     <meta name="twitter:title"       content="WKNY Design Deptartment">
     <meta name="twitter:description" content="DESIGN DEPARTMENT  is published by Wieden+Kennedy New York. The series is an ongoing and modular exploration of design and the creative workings around it.">
     <meta name="twitter:image"       content="http://wknydesign.com/links/wkny-social.jpg">
+
+    <script type="text/javascript">
+    	$(document).ready(function(){
+		  $(".hamburger").click(function(){
+		    $(this).toggleClass("is-active");
+		  });
+		});
+    </script>
 
   </head>
 

@@ -104,6 +104,10 @@ nav {
 	align-items: center;
 }
 
+nav:hover {
+	background-color: #C6C6C6;
+}
+
 .global-info div,
 .page-info div {
 	display: inline-block;
@@ -137,7 +141,7 @@ nav {
 	background-color: #000;
 	display: block;
 	margin: 4px auto;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.1s ease-in-out;
 }
 
 .hamburger:hover{
@@ -145,11 +149,11 @@ nav {
 }
 
 .hamburger.is-active .line:nth-child(1){
-	transform: translateY(4px);
+	transform: translateY(6px);
 }
 
 .hamburger.is-active .line:nth-child(3){
-	transform: translateY(-4px);
+	transform: translateY(-6px);
 }
 
 /*   LISTING   */
@@ -415,17 +419,11 @@ nav {
 	 }
 
 	.hamburger.is-active .line:nth-child(1){
-		-webkit-transform: translateY(8px);
-		-ms-transform: translateY(8px);
-		-o-transform: translateY(8px);
-		transform: translateY(8px);
+		transform: translateY(10px);
 	}
 
 	.hamburger.is-active .line:nth-child(3){
-		-webkit-transform: translateY(-8px);
-		-ms-transform: translateY(-8px);
-		-o-transform: translateY(-8px);
-		transform: translateY(-8px);
+		transform: translateY(-10px);
 	}
 }
 
@@ -470,6 +468,7 @@ nav {
 
 	.menu {
 		width: 12%;
+		max-width: 50px;
 	}
 
 	.global-info {
